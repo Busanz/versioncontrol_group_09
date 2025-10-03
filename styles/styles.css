@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+}
+
+.home__nav {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  padding: 15px 25px;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.nav-menuItem {
+  padding: 15px 25px;
+}
