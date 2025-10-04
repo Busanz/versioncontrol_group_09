@@ -1,0 +1,55 @@
+.main_branching {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.branching_article {
+    height: 100%;
+    max-width: 43.25rem;
+    margin: 24px;
+    padding: 24px;
+}
+
+img {
+    margin: 24px 0;
+}
+
+.commands {
+    background-color: antiquewhite;
+    border-radius: 10%;
+    margin-bottom: 16px;
+    padding: 24px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.command_name {
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 769px) {
+    .main_branching {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .branching {
+        max-width: 43.25rem;
+        height: 100%;
+    }
+}
