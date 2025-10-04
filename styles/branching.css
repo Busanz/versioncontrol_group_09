@@ -1,3 +1,7 @@
+body {
+    height: auto;
+}
+
 .main_branching {
     display: flex;
     justify-content: center;
@@ -11,6 +15,14 @@
     max-width: 43.25rem;
     margin: 24px;
     padding: 24px;
+}
+
+.list {
+    margin: 24px 0;
+}
+
+.best_practices {
+    margin-bottom: 36px;
 }
 
 img {
@@ -47,6 +59,11 @@ h2 {
         justify-content: center;
     }
 
+    img {
+        max-width: 70%;
+        display: block;
+        margin: 48px auto;
+    }
 
     .branching {
         max-width: 43.25rem;
