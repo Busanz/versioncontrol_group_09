@@ -25,13 +25,15 @@ img {
 }
 
 .commands {
-    background-color: antiquewhite;
-    border-radius: 10%;
+    background-color: rgb(247, 241, 234);
+    border-radius: 20px;
     margin-bottom: 16px;
     padding: 24px;
 }
 
-h2 {
+h2,
+h3 {
+    color: #4e3c25;
     text-align: center;
 }
 
