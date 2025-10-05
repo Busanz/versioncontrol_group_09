@@ -1,8 +1,8 @@
 .main_home {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* dikey ortalama */
-  align-items: center;     /* yatay ortalama */
+  justify-content: center; 
+  align-items: center;     
   flex-grow: 1;
   padding: 24px;
   text-align: center;
@@ -18,16 +18,16 @@
 }
 
 .main_home .main_article {
-  width: 100%;       /* küçük ekranlarda full genişlik */
-  max-width: 800px;  /* maksimum genişlik */
+  width: 100%;       
+  max-width: 800px;  
   margin-bottom: 24px;
   text-align: left;
 }
 .article-image {
-  max-width: 100%;    /* ekranı aşmaz */
-  max-height: 400px;  /* yüksekliği sınırla */
-  height: auto;       /* orantıyı korur */
+  max-width: 100%;    
+  max-height: 400px;  
+  height: auto;       
   display: block;
-  margin: 16px auto;  /* ortalama */
+  margin: 16px auto;  
   border-radius: 12px;
 }

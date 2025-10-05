@@ -35,7 +35,7 @@ h1 {
   list-style-type: none;
 }
 
-main{
+main {
   flex: 1;
 }
 
@@ -47,7 +47,7 @@ main{
 } 
 
 .menu-item:hover,
-.menu-item.active{
+.menu-item.active {
   background-color: rgb(247, 241, 234);
   border-radius: 20px;
   color: rgb(57, 41, 41);
