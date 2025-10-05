@@ -1,0 +1,33 @@
+.main_home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* dikey ortalama */
+  align-items: center;     /* yatay ortalama */
+  flex-grow: 1;
+  padding: 24px;
+  text-align: center;
+}
+
+.main_article {
+  height: 100%;
+  margin-bottom: 24px;
+  border-radius: 20px;
+  padding: 16px;
+  background-color: #fbf5ec;
+  border-radius: 20px;
+}
+
+.main_home .main_article {
+  width: 100%;       /* küçük ekranlarda full genişlik */
+  max-width: 800px;  /* maksimum genişlik */
+  margin-bottom: 24px;
+  text-align: left;
+}
+.article-image {
+  max-width: 100%;    /* ekranı aşmaz */
+  max-height: 400px;  /* yüksekliği sınırla */
+  height: auto;       /* orantıyı korur */
+  display: block;
+  margin: 16px auto;  /* ortalama */
+  border-radius: 12px;
+}
