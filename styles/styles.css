@@ -4,18 +4,23 @@
 
 html {
   height: 100vh;
+  margin: 0;
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
   display: flex;
-  background-color: bisque;
+  background-color: rgb(200, 183, 171);
   margin: 0;
   flex-direction: column;
-  height: 100%;
+  min-height: 100vh;
 }
 
 h1 {
   font-size: 2rem;
+  color: #4e3c25;
 }
 
 .header {
@@ -24,10 +29,14 @@ h1 {
 
 .menu {
   display: flex;
-  background-color: rgb(102, 86, 78);
+  background-color: rgb(128, 113, 106);
   justify-content: space-evenly;
   padding: 8px 64px;
   list-style-type: none;
+}
+
+main {
+  flex: 1;
 }
 
 .menu-item {
@@ -35,7 +44,16 @@ h1 {
   padding: 8px 12px;
   text-decoration: none;
   color: white;
-} /* part can change below it*/
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background-color: rgb(247, 241, 234);
+  border-radius: 20px;
+  color: rgb(57, 41, 41);
+}
+
+/* part can change below it*/
 
 .main_home {
   display: flex;
@@ -53,17 +71,18 @@ h1 {
   margin-bottom: 24px;
   border-radius: 20px;
   padding: 16px;
-  background-color: #f5d5aa;
+  background-color: #fbf5ec;
   border-radius: 20px;
 }
 
 .footer {
-  background-color: rgb(131, 116, 105);
+  background-color: rgb(120, 106, 95);
   padding: 24px;
+  margin-top: auto;
 }
 
 .footer_content {
-  color: rgb(66, 51, 45);
+  color: rgb(215, 203, 199);
   text-align: center;
 }
 
