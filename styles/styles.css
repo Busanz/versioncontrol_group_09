@@ -15,12 +15,13 @@ body {
   background-color: rgb(200, 183, 171);
   margin: 0;
   flex-direction: column;
-  min-height: 100vh; 
+  min-height: 100vh;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 2.1rem;
   color: #4e3c25;
+  font-weight: 300;
 }
 
 .header {
@@ -40,11 +41,11 @@ main {
 }
 
 .menu-item {
-  font-size: 16px;
+  font-size: 1rem;
   padding: 8px 12px;
   text-decoration: none;
   color: white;
-} 
+}
 
 .menu-item:hover,
 .menu-item.active {
