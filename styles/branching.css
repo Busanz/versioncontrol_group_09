@@ -15,6 +15,10 @@
     padding: 24px;
 }
 
+.branching_title {
+    font-weight: bold;
+}
+
 p {
     margin: 12px 0;
 }
@@ -51,12 +55,15 @@ img {
 h2,
 h3 {
     color: #4e3c25;
-    text-align: center;
 }
 
 h3 {
     padding: 0 12px;
     text-align: left;
+}
+
+.branchingcommands_title {
+    text-align: center;
 }
 
 .command_description {
