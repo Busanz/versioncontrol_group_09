@@ -64,6 +64,8 @@ main {
   flex-grow: 1;
   padding: 24px;
   text-align: center;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
 }
 
 .main_article {
