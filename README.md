@@ -20,12 +20,12 @@ We have shared what we learned on our website to help others understand these co
 
 ## 👥 Team Member Roles & Contributions
 
-- <span style="color: #db861d;">_Sevilay Guns_</span> – Set up the base structure of the website, including the header, footer, and general layout pages. Created the **About Us** and **Home Page** pages, and defined the overall colors and fonts in the **general style.css** file. Also wrote the README file.
+- _Sevilay Guns_- Set up the base structure of the website, including the header, footer, and general layout pages. Created the **About Us** and **Home Page** pages, and defined the overall colors and fonts in the **general style.css** file. Also wrote the README file.
 
-- <span style="color: #db861d;">_Buddhi Thotawaththage_</span>,
+- _Buddhi Thotawaththage_
   – Assisted with the **general style.css** and **index.html**, and created the **Project Page** along with a **project.css** file for its specific styling and adjustments.
 
-- <span style="color: #db861d;">_Simge Ates_</span> Designed and worked on the **Changes** and **Branching** pages, editing the **branching.css** and **changes.css** files according to her pages. Also provided support to the team in general page styling and layout adjustments.
+- _Simge Ates_-Designed and worked on the **Changes** and **Branching** pages, editing the **branching.css** and **changes.css** files according to her pages. Also provided support to the team in general page styling and layout adjustments.
 
 ## 💻 Technologies Used
 
