@@ -34,11 +34,11 @@ We have shared what we learned on our website to help others understand these co
 - **Git** – Version control to track changes locally ([Download](https://git-scm.com/))
 - **GitHub** – Remote repository for collaboration and sharing ([Sign up / Learn more](https://github.com/))
 
-<img src="images/htmlLogo.gif" width="60" alt="htmlLogo">
-<img src="images/cssLogo.gif" width="60" alt="cssLogo">
-<img src="images/visualStudioCodeLogo.gif" width="60" alt="vscLogo">
-<img src="images/gitLogo.gif" width="80" alt="gitLogo">
-<img src="images/gitHubLogo.gif" width="60" alt="gitHubLogo">
+<img src="images/htmlLogo.gif" width="120" alt="htmlLogo">
+<img src="images/cssLogo.gif" width="120" alt="cssLogo">
+<img src="images/vscLogo.gif" width="120" alt="vscLogo">
+<img src="images/gitLogo.gif" width="120" alt="gitLogo">
+<img src="images/gitHubLogo.gif" width="120" alt="gitHubLogo">
 
 ## 📥 How to Clone & Run the Project
 
