@@ -108,6 +108,11 @@
   color: #f17b06;
 }
 
+.process_step_instruction {
+  color: #0660f1;
+  font-weight: bolder;
+}
+
 @media screen and (max-width: 769px) {
   h1 {
     font-size: 1.8rem;
