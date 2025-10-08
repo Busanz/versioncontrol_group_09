@@ -20,28 +20,22 @@
     margin-bottom: 0;
 }
 
-p {
-    margin: 12px 0;
-}
-
-.list li,
-.best_practices li {
+.list li {
     margin-bottom: 8px;
     line-height: 1.6;
-}
-
-.best_practices_container {
-    margin: 48px 0;
 }
 
 .list {
     margin: 24px 0;
 }
 
-.best_practices {
-    margin-bottom: 36px;
+img {
+    margin: 24px 0;
 }
 
+.span {
+    font-weight: bold;
+}
 
 .commands {
     background-color: rgb(205, 197, 191);
@@ -50,18 +44,14 @@ p {
     padding: 24px;
 }
 
+
 h2,
 h3 {
     color: #4e3c25;
 }
 
 h3 {
-    padding: 0 12px;
     text-align: left;
-}
-
-.branchingcommands_title {
-    text-align: center;
 }
 
 .command_description {
@@ -70,7 +60,7 @@ h3 {
 }
 
 @media screen and (min-width: 769px) {
-    .main_branching {
+    .main_changing {
         display: flex;
         height: 100%;
         width: 100%;
@@ -83,12 +73,4 @@ h3 {
         margin: 48px auto;
     }
 
-    .best_practices_container {
-        margin: 70px 0;
-    }
-
-    .branching {
-        max-width: 43.25rem;
-        height: 100%;
-    }
 }

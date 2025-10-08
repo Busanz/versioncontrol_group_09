@@ -24,8 +24,7 @@ p {
     margin: 12px 0;
 }
 
-.list li,
-.best_practices li {
+.list li {
     margin-bottom: 8px;
     line-height: 1.6;
 }

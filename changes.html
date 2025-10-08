@@ -22,27 +22,58 @@
 
   <main class="main_changes">
     <article class="changes_article">
-      <h1 class="changes_title">Making and Saving Changes in Git</h1>
-      <p class="page_description">Once your repository is created, the real work begins; writing code, editing files,
-        and improving your project. Git helps you keep track of every change you make and makes it easy to share your
-        updates with your. This page walks you through the process of updating an existing Git repository. You'll see
-        how to:</p>
-      <ul>
-        <li>Stage your modified files</li>
-        <li>Commit those changes with clear messages</li>
-        <li>Push them to your remote repository on GitHub</li>
-      </ul>
-      <br>
+      <article class="changes_introduction">
+        <h1 class="changes_title">Making and Saving Changes in Git</h1>
+        <p class="page_description">Once your repository is created, the real work begins; writing code, editing files,
+          and improving your project. Git helps you keep track of every change you make and makes it easy to share your
+          updates with your. This page walks you through the process of updating an existing Git repository. You'll see
+          how to:</p>
+        <ul>
+          <li>Stage your modified files</li>
+          <li>Commit those changes with clear messages</li>
+          <li>Push them to your remote repository on GitHub</li>
+        </ul>
+        <img src="./images/git-flowchart-changes.png" alt="Changes flow chart" height="auto" width="100%">
+      </article>
       <article class="workflow_article">
         <h2>Understanding The Git Work Flow</h2>
         <p>Before sending your code to GitHub, there are three main steps to follow:</p>
         <div class="commands">
-          <h3>Staging</h3>
+          <h3>1.Staging</h3>
           <p>Think of staging like putting files in a “ready-to-send” box. When you make changes in your project, Git
             doesn't automatically include them. You first need to stage the files you want to save.</p>
-
-
+          <p class="command_description"># For staging a specific file</p>
+          <p class="command_syntax">git add filename.html</p>
+          <p class="command_description"># For staging all changed files</p>
+          <p class="command_syntax">git add .</p>
+          <p>💡 Tip: The dot (.) means “add everything I've changed.”</p>
         </div>
+        <div class="commands">
+          <h3>2.Committing</h3>
+          <p>Committing is like taking a snapshot of your staged changes. Once you've staged your files, a commit
+            permanently records those changes in your local repository (your computer), with a short message explaining
+            what you did.</p>
+          <p class="command_description"># For committing the staged files</p>
+          <p class="command_syntax">git commit -m "add your message here"</p>
+          <p>💡 Tip: The message should describe why or what you changed, not just “update.”</p>
+        </div>
+        <div class="commands">
+          <h3>3.Pushing</h3>
+          <p>Pushing is like sending your snapshot to the cloud (GitHub). When you push, you upload your local commits
+            to the remote repository so your teammates can see and use them.</p>
+          <p class="command_description"># If it's your first time pushing this branch, you might need to link it</p>
+          <p class="command_syntax">git push -u origin your_branch_name</p>
+          <p class="command_description"># For pushing after you linked</p>
+          <p class="command_syntax">git push</p>
+        </div>
+      </article>
+      <article class="best_practices_container">
+        <h3>Best Practices for Using Git:</h3>
+        <ul class="list">
+          <li><span class="span">Commit often and clearly:</span> Make small, frequent commits with descriptive messages
+            (e.g., "Add
+            footer links" instead of "Update").</li>
+        </ul>
       </article>
     </article>
   </main>
