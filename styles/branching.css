@@ -1,11 +1,11 @@
 .main_branching {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  background-color: rgb(247, 241, 234);
-  line-height: 1.6;
-  letter-spacing: 0.2px;
+    background-color: rgb(247, 241, 234);
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
 .branching_article {
@@ -15,14 +15,18 @@
   padding: 24px;
 }
 
+.branching_title {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
 p {
   margin: 12px 0;
 }
 
-.list li,
-.best_practices li {
-  margin-bottom: 8px;
-  line-height: 1.6;
+.list li {
+    margin-bottom: 8px;
+    line-height: 1.6;
 }
 
 .best_practices_container {
@@ -50,13 +54,17 @@ img {
 
 h2,
 h3 {
-  color: #4e3c25;
-  text-align: center;
+    color: #4e3c25;
+    margin-bottom: 0;
 }
 
 h3 {
   padding: 0 12px;
   text-align: left;
+}
+
+.branchingcommands_title {
+    text-align: center;
 }
 
 .command_description {
