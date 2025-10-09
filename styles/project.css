@@ -116,6 +116,10 @@
   border-radius: 10px;
 }
 
+em {
+  display: block;
+  padding-bottom: 12px;
+}
 @media screen and (max-width: 769px) {
   h1 {
     font-size: 1.8rem;
