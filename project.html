@@ -354,10 +354,112 @@
           <p>
             To make a link between locally initialized directory and remote repo
             in GitHub account. Run the below command in terminal replace the
-            copied URL with own one.
+            copied URL with own one (Make sure to be inside the previously
+            created directory).
           </p>
           <p class="process_step_command">
             <code>git remote add origin &lt;replace_with_URL&gt;</code>
+          </p>
+
+          <h3>Add files locally and push to remote</h3>
+          <p>
+            Up to this point, created connection between local and remote. Let
+            learn how to create a file and make a snapshot of it in remote
+            location
+          </p>
+          <p class="process_step_instruction">
+            1. Create a file in the local directory
+          </p>
+          <p>
+            Create a file inside the local directory as example
+            <code>index.html</code>. It can be done by UI or in the terminal
+            (Make sure to be inside the previously created directory). Run below
+            command to create a file.
+          </p>
+
+          <p class="process_step_command">
+            <em>#On Windows OS</em>
+            <code>echo. > index.html</code>
+          </p>
+          <p class="process_step_command">
+            <em>#On macOS, Linux</em>
+            <code>touch index.html</code>
+          </p>
+
+          <p class="process_step_instruction">2. Add created file to Staging</p>
+          <p>
+            Now the the step to generate list of locally created or modified
+            files and add into the staging layer. To do so run the below
+            command. Every time that make a changes locally inside the directory
+            it need to be perform.
+          </p>
+
+          <p class="process_step_command">
+            <em>#Add only specific file</em>
+            <code>git add index.html</code>
+          </p>
+          <p class="process_step_command">
+            <em>Add all the modified files at once</em>
+            <code>git add .</code>
+          </p>
+
+          <p class="process_step_instruction">
+            3. Move added list to local Git repo
+          </p>
+          <p>
+            This process call <code>committing</code>. With above command
+            projected list of files need to move to a local repo. By running the
+            following command, it move a snap shot of those files into local
+            repository. The text inside the quote should have to change with
+            what changes done.
+          </p>
+          <p class="process_step_command">
+            <code>git commit -m "Initial commit"</code>
+          </p>
+
+          <p class="process_step_instruction">
+            4. Move committed file to GitHub remote repository
+          </p>
+
+          <p>
+            The last step to send the committed files to the remote repository
+            which is already link by
+            <code>git remote add origin &lt;replace_with_URL&gt;</code>. Send
+            the extract copy of the local files to the Github project run the
+            below command.
+          </p>
+          <p class="process_step_command">
+            <em>#If the default branch name is main</em>
+            <code>git push -u origin main</code>
+          </p>
+          <p class="process_step_command">
+            <em>#If the default branch name is master</em>
+            <code>git push -u origin master</code>
+          </p>
+          <p>It can be found as shown in the below screenshot.</p>
+          <img
+            alt="The GitHub default branch"
+            src="./images/project/defaultBranch.png"
+            width="400px"
+            height="auto"
+            class="project_article_img"
+          />
+          <p>
+            🎉🎉 Great Job ...! Now you have link and send the files to the
+            GitHub repo.
+          </p>
+          <p>
+            To keep both local project directory and the remote GitHub project
+            on a same keep continue pushing the update regularly.
+          </p>
+          <p class="process_step_command">
+            <em><code>git add .</code></em>
+            <em
+              ><code
+                >git commit -m "&lt;replace_with_appropriate_comment&gt;"</code
+              ></em
+            >
+            <em><code>git push</code></em>
           </p>
         </article>
 
