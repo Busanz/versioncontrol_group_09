@@ -319,12 +319,13 @@
           </p>
 
           <p class="process_step_instruction">
-            3. Initialize the create directory for Git
+            3. Initialize the created directory for Git
           </p>
           <p>
             After move into the created directory and initializing that
             directory for Git. This creates local GitRepo which track all the
-            changes in locally.
+            changes in locally (this make a hidden directory call
+            <code>.git</code> inside itself).
           </p>
           <p class="process_step_command">
             <code>git init</code>
@@ -332,8 +333,31 @@
 
           <h3>Link a local repo to a remote repo</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos et
-            expedita non enim neque unde esse quo quas provident.
+            So far, created a directory and initialized that with Git and now it
+            is the time to make a connection between local directory and remote
+            GitHub repository.
+          </p>
+          <p class="process_step_instruction">1. Goto the GitHub</p>
+          <p>
+            Select is repository tab and select the created project and select
+            on the "&lt;&gt;Code" button and copy the URL under
+            <code>HTPPS</code>.
+          </p>
+          <img
+            alt="The button to GitHub repo URL"
+            src="./images/project/gitRepoURL.png"
+            width="400px"
+            height="auto"
+            class="project_article_img"
+          />
+          <p class="process_step_instruction">2. Create a connection</p>
+          <p>
+            To make a link between locally initialized directory and remote repo
+            in GitHub account. Run the below command in terminal replace the
+            copied URL with own one.
+          </p>
+          <p class="process_step_command">
+            <code>git remote add origin &lt;replace_with_URL&gt;</code>
           </p>
         </article>
 
