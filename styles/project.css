@@ -48,7 +48,6 @@
 .project_article_img {
   padding: 8px 18px;
   margin-top: 32px;
-  border-radius: 10px;
   width: 100%;
   max-width: 600px;
 }
@@ -108,8 +107,7 @@
   color: #f17b06;
 }
 
-.process_step_instruction {
-  color: #0660f1;
+.project_article .process_step_instruction {
   font-weight: bolder;
 }
 
