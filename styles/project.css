@@ -110,6 +110,11 @@
 .project_article .process_step_instruction {
   font-weight: bolder;
 }
+.project_article .process_step_command {
+  padding: 24px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
 
 @media screen and (max-width: 769px) {
   h1 {
