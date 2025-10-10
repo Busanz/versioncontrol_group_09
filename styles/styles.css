@@ -59,8 +59,8 @@ main {
 .main_home {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center;    
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
   padding: 24px;
   text-align: center;
@@ -78,17 +78,18 @@ main {
 }
 
 .main_home .main_article {
-  width: 100%;       
-  max-width: 800px;  
+  width: 100%;
+  max-width: 800px;
   margin-bottom: 24px;
   text-align: left;
 }
+
 .article-image {
-  max-width: 100%;    
-  max-height: 400px;  
-  height: auto;       
+  max-width: 100%;
+  max-height: 400px;
+  height: auto;
   display: block;
-  margin: 16px auto;  
+  margin: 16px auto;
   border-radius: 12px;
 }
 
