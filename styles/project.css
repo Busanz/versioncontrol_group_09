@@ -123,16 +123,16 @@ em {
 @media screen and (max-width: 769px) {
   h1 {
     font-size: 1.8rem;
-    padding: 12px 8px;
+    padding: 12px 0px;
   }
 
   p {
     font-size: 0.9rem;
-    padding: 12px 8px;
+    padding: 12px 0px;
   }
 
   .main_project {
-    padding: 12px 24px;
+    padding: 12px 0px;
   }
 
   .project_container {
@@ -141,7 +141,7 @@ em {
 
   .project_article {
     margin-top: 24px;
-    padding: 12px 8px;
+    padding: 12px 0px;
   }
 
   .project_article p {
@@ -151,10 +151,15 @@ em {
   .project_article:nth-of-type(4) {
     margin-bottom: 50px;
   }
+
+  .project_article_img {
+    padding: 8px 1px;
+    margin-top: 12px;
+  }
 }
 
 @media screen and (max-width: 640px) {
   .main_project {
-    padding: 12px 8px;
+    padding: 12px 0;
   }
 }
