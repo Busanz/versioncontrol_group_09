@@ -12,11 +12,10 @@
   height: 100%;
   max-width: 43.25rem;
   margin: 24px;
-  padding: 24px;
+  padding: 24px 0;
 }
 
 .changes_title {
-  font-weight: bold;
   margin-bottom: 0;
 }
 
@@ -47,15 +46,16 @@ img {
 h2,
 h3 {
   color: #4e3c25;
+  font-weight: 200;
 }
 
 h3 {
   text-align: left;
+  font-weight: bold;
 }
 
 .command_description {
   font-style: italic;
-  font-weight: bold;
 }
 
 @media screen and (min-width: 769px) {
