@@ -1,23 +1,22 @@
 .main_branching {
-    background-color: rgb(247, 241, 234);
-    line-height: 1.6;
-    letter-spacing: 0.2px;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+  background-color: rgb(247, 241, 234);
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 .branching_article {
   height: 100%;
   max-width: 43.25rem;
   margin: 24px;
-  padding: 24px;
+  padding: 24px 0;
 }
 
 .branching_title {
-    font-weight: bold;
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 p {
@@ -25,8 +24,8 @@ p {
 }
 
 .list li {
-    margin-bottom: 8px;
-    line-height: 1.6;
+  margin-bottom: 8px;
+  line-height: 1.6;
 }
 
 .best_practices_container {
@@ -52,10 +51,13 @@ img {
   padding: 24px;
 }
 
-h2,
+.main_branching h2 {
+  font-weight: 300;
+}
+
 h3 {
-    color: #4e3c25;
-    margin-bottom: 0;
+  color: #4e3c25;
+  margin-bottom: 0;
 }
 
 h3 {
@@ -63,13 +65,8 @@ h3 {
   text-align: left;
 }
 
-.branchingcommands_title {
-    text-align: center;
-}
-
 .command_description {
   font-style: italic;
-  font-weight: bold;
 }
 
 @media screen and (min-width: 769px) {
