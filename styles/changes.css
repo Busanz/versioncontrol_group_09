@@ -1,0 +1,78 @@
+.main_changes {
+  background-color: rgb(247, 241, 234);
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.changes_article {
+  height: 100%;
+  max-width: 43.25rem;
+  margin: 24px;
+  padding: 24px 0;
+}
+
+.changes_title {
+  margin-bottom: 0;
+}
+
+.list li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.list {
+  margin: 24px 0;
+}
+
+img {
+  margin: 24px 0;
+}
+
+.span {
+  font-weight: bold;
+}
+
+.commands {
+  background-color: rgb(205, 197, 191);
+  border-radius: 20px;
+  margin-bottom: 16px;
+  padding: 24px;
+}
+
+h2,
+h3 {
+  color: #4e3c25;
+  font-weight: 200;
+}
+
+h3 {
+  text-align: left;
+  font-weight: bold;
+}
+
+.command_description {
+  font-style: italic;
+}
+
+@media screen and (min-width: 769px) {
+  .main_changing {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  img {
+    max-width: 70%;
+    display: block;
+    margin: 48px auto;
+  }
+
+  .best_practices_container {
+    margin: 70px 0;
+  }
+}

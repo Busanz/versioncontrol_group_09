@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Branching</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/branching.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="menu">
+      <a class="menu-item" href="index.html">Homepage</a>
+      <a class="menu-item" href="project.html">Project</a>
+      <a class="menu-item" href="changes.html">Changes</a>
+      <a class="menu-item active" href="branching.html">Branching</a>
+      <a class="menu-item" href="aboutus.html">About us</a>
+    </nav>
+  </header>
+  <main class="main_branching">
+    <article class="branching_article">
+      <article class="branching_introduction">
+        <h1 class="branching_title">What is Branching?</h1>
+        <p class="page_description">Branching in Git is like making a copy of your project so you can work on
+          something new without messing up the main version. Branches let you work on different parts of a
+          project, like new features or bug fixes, without interfering with the main branch.</p>
+        <hr>
+        <h2 class="branching_title">Why Branching is important?</h2>
+        <p class="branching_description">Branching is important because it allows developers to work on different
+          features or fixes at the same time without disturbing the main version of the project. It provides a
+          safe space to test and build new ideas, and when the work is complete, the branch can be merged back
+          into the main branch.</p>
+        <h3>Some key points:</h3>
+        <ul class="list">
+          <li>It lets you develop new features or fix bugs without breaking the stable main branch.</li>
+          <li>Multiple people can work in parallel (each on their own branch).</li>
+          <li>You can experiment safely — if something doesn't work, the main project is unaffected.</li>
+          <li>Once you're happy, you can merge your branch back into the main project.</li>
+        </ul>
+        <img src="./images/branching-flow.png" alt="Branching flow chart" height="auto" width="100%">
+      </article>
+      <div class="commands_container">
+        <h2 class="branchingcommands_title">Commands for Branching </h2>
+        <p>Here are the most common used commands when dealing with branches in Git.</p>
+        <div class="commands">
+          <h3>Create Branches</h3>
+          <p class="command_description"># For creating new branches</p>
+          <p class="command_syntax">git branch branch-name</p>
+          <p class="command_description"># For creating and switching at the same time</p>
+          <p class="command_syntax">git branch -b branch-name</p>
+          <p class="command_description"># Switch to another branch</p>
+          <p class="command_syntax">git check out branch-name</p>
+        </div>
+        <div class="commands">
+          <h3>Close Branches</h3>
+          <p class="command_description"># For deleting a branch locally</p>
+          <p class="command_syntax">git branch -d branch-name</p>
+          <p class="command_description"># For deleting a branch remotely (on Github)</p>
+          <p class="command_syntax">git push origin --delete branch-name</p>
+        </div>
+        <div class="commands">
+          <h3>Other useful commands for branching</h3>
+          <p class="command_description"># For renaming a branch</p>
+          <p class="command_syntax">git branch -m old-name new-name</p>
+          <p class="command_description"># For listing all branches (current branch has * next to it)</p>
+          <p class="command_syntax">git branch</p>
+          <p class="command_description"># For seeing which branch you're on</p>
+          <p class="command_syntax">git status</p>
+        </div>
+      </div>
+      <div class="best_practices_container">
+        <h3>Best practices for working with branches:</h3>
+        <ul class="list">
+          <li>Use clear, descriptive branch names (like feature/login-page or bugfix/header-crash)</li>
+          <li>Keep each branch focused on a single purpose or feature.</li>
+          <li>Regularly merge changes from the main branch to keep your branch up-to-date.</li>
+          <li>Delete branches that are no longer needed to keep your repository clean.</li>
+        </ul>
+      </div>
+    </article>
+  </main>
+  <footer class="footer">
+    <p class="footer_content">&copy; version control_group_09 2025</p>
+  </footer>
+</body>
+
+</html>
