@@ -34,10 +34,10 @@
           <h2>Why remote repositories are necessary?</h2>
           <img
             alt="Remote repository image"
-            src="./images/remoteRepo.png"
+            src="./images/project/remoteRepo.png"
             width="auto"
             height="auto"
-            class="article_img_remoteRepo"
+            class="project_article_img"
           />
           <div class="project_article_cote">
             Imagine you are working on a coding project, and suddenly something
@@ -153,51 +153,369 @@
         </article>
 
         <article class="project_article">
-          <h2>Steps for creating a project on GitHub</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos et
-            expedita non enim neque unde esse quo quas provident, libero omnis
-            autem velit accusamus in hic facere voluptas ipsa molestias. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Sunt in, cum ex
-            delectus vero, nostrum, cupiditate natus facere necessitatibus fugit
-            optio neque et? Facilis fuga rem voluptates labore sint quibusdam?
+            Following steps from this article is demonstrated the step-by-step
+            guidance for installing and using Git and version control systems
+            (e.g.: GitHub) will be demonstrated. Novice learners will be guided
+            through initializing a repository on GitHub, checking if Git has
+            been installed and initializing a project locally and connect to
+            remoteRepo. Each process will be clearly explained to help beginners
+            understand how modifications in code are tracked, managed, and
+            shared effectively.
           </p>
+          <h2>Steps for creating a project on GitHub</h2>
+          <img
+            alt="GitHub basic layers"
+            src="./images/project/gitHubLayers.png"
+            width="auto"
+            height="auto"
+            class="project_article_img"
+          />
+          <p>
+            The most popular Git platform is
+            <span class="highlight_words">GitHub</span>, which operates based on
+            the Git version control system. Similar to other remote storage
+            platforms like Google Drive, OneDrive, or Dropbox, GitHub also
+            consists of two main storage layers, the
+            <span class="highlight_words">local machine</span> and the
+            <span class="highlight_words">remote cloud location</span>. However,
+            GitHub is specifically designed for
+            <span class="highlight_words"
+              >version control and code-based development projects</span
+            >, making it much more than just a storage service.
+            <br /><br />Within the local storage, Git organizes files into three
+            main layers to efficiently handle code changes:
+          </p>
+
+          <div class="project_article_list">
+            <ul>
+              <li>
+                <p>
+                  The <span class="highlight_words">Working Directory</span>,
+                  which contains the actual project files being created or
+                  modified by the user
+                </p>
+              </li>
+              <li>
+                <p>
+                  The <span class="highlight_words">Index (Staging Area)</span>,
+                  where selected files are prepared to be sent to the remote
+                  repository this can include one file or multiple files.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The
+                  <span class="highlight_words"
+                    >Committed Layer (Repository)</span
+                  >, which holds the finalized versions of files that are ready
+                  to be pushed to the remote repository.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <p>
+            Let us explore how a remote storage location known as a remote
+            repository is created in GitHub.
+          </p>
+          <div>
+            <div>
+              <p class="process_step_instruction">1. Sign in to GitHub</p>
+              <p>
+                If you do not have a account in
+                <a href="https://github.com/" target="_blank"> GitHub</a> just
+                signup to create a GitHub account.
+              </p>
+
+              <p class="process_step_instruction">
+                2. Creating a new repository in GitHub
+              </p>
+              <p>
+                After login select the new button to start creating a
+                repository.
+              </p>
+              <img
+                alt="The selection button to create new project"
+                src="./images/project/createNewRepo.png"
+                width="auto"
+                height="auto"
+                class="project_article_img"
+              />
+
+              <p>
+                In the next window, enter a clear and descriptive and valid name
+                for your project and adding a project description,
+                <a
+                  href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax"
+                  target="_blank"
+                >
+                  readme</a
+                >
+                file are good practice. Choose the visibility of the project by
+                selecting public or private. Finally, select the “Create
+                repository” button at the bottom. 🎉🎉 Good job now you have
+                create you project on GitHub.
+              </p>
+              <img
+                alt="The selection button to create new project"
+                src="./images/project/createNewRepoAddDetails.png"
+                width="auto"
+                height="auto"
+                class="project_article_img"
+              />
+            </div>
+          </div>
         </article>
+
         <article class="project_article">
           <h2>Basic Git commands</h2>
           <img
             alt="Remote repository image"
-            src="./images/gitCommands.png"
+            src="./images/project/gitCommands.png"
             width="auto"
             height="auto"
-            class="article_img_remoteRepo"
+            class="project_article_img"
           />
           <p>
-            Lorem ipsum, <code>git clone</code> amet consectetur adipisicing
-            elit. Quos et expedita non enim neque unde esse quo quas provident.
+            Now we have a remote repository, the next step to be create a
+            directory for the store project files locally and link to the remote
+            GitHub project.
           </p>
           <h3>Create a project locally</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos et
-            expedita non enim neque unde esse quo quas provident.
+          <p class="process_step_instruction">
+            1. As a first step of need to conform that you have installed
+            <code>Git</code> in your local machine
           </p>
+          <p>
+            By default most of the modern macOS devices shipped with installed
+            but not all the time for Windows.open your terminal (if you can open
+            Git Bash prompt on window that mean, might have installed Git) and
+            type:
+          </p>
+          <p class="process_step_command"><code>git --version</code></p>
+          <p>
+            If git is installed on local machine it show something like below:
+          </p>
+          <p class="process_step_command"><code> git version 2.51.0</code></p>
+          <p>
+            If it shows an error message something like “command not found”, it
+            means Git is not installed in local machine. So need to
+            <a href="https://git-scm.com/downloads" target="_blank">
+              install git</a
+            >.
+          </p>
+          <p class="process_step_instruction">
+            2. Create a directory for your local project files
+          </p>
+          <p>Open the terminal and follow the below steps.</p>
+          <p class="process_step_command">
+            <em># 1. Create a new directory</em>
+            <code>mkdir &lt;project_directory_name&gt; </code>
+          </p>
+
+          <p class="process_step_command">
+            <em># 2. Move into the directory</em>
+            <code>cd &lt;project_directory_name&gt; </code>
+          </p>
+
+          <p class="process_step_instruction">
+            3. Initialize the created directory for Git
+          </p>
+          <p>
+            After move into the created directory and initializing that
+            directory for Git. This creates local GitRepo which track all the
+            changes in locally (this make a hidden directory call
+            <code>.git</code> inside itself).
+          </p>
+          <p class="process_step_command">
+            <code>git init</code>
+          </p>
+
           <h3>Link a local repo to a remote repo</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos et
-            expedita non enim neque unde esse quo quas provident.
+            So far, created a directory and initialized that with Git and now it
+            is the time to make a connection between local directory and remote
+            GitHub repository.
+          </p>
+          <p class="process_step_instruction">1. Goto the GitHub</p>
+          <p>
+            Select is repository tab and select the created project and select
+            on the "&lt;&gt;Code" button and copy the URL under
+            <code>HTPPS</code>.
+          </p>
+          <img
+            alt="The button to GitHub repo URL"
+            src="./images/project/gitRepoURL.png"
+            width="400px"
+            height="auto"
+            class="project_article_img"
+          />
+          <p class="process_step_instruction">2. Create a connection</p>
+          <p>
+            To make a link between locally initialized directory and remote repo
+            in GitHub account. Run the below command in terminal replace the
+            copied URL with own one (Make sure to be inside the previously
+            created directory).
+          </p>
+          <p class="process_step_command">
+            <code>git remote add origin &lt;replace_with_URL&gt;</code>
+          </p>
+
+          <h3>Add files locally and push to remote</h3>
+          <p>
+            Up to this point, created connection between local and remote. Let
+            learn how to create a file and make a snapshot of it in remote
+            location
+          </p>
+          <p class="process_step_instruction">
+            1. Create a file in the local directory
+          </p>
+          <p>
+            Create a file inside the local directory as example
+            <code>index.html</code>. It can be done by UI or in the terminal
+            (Make sure to be inside the previously created directory). Run below
+            command to create a file.
+          </p>
+
+          <p class="process_step_command">
+            <em>#On Windows OS</em>
+            <code>echo. > index.html</code>
+          </p>
+          <p class="process_step_command">
+            <em>#On macOS, Linux</em>
+            <code>touch index.html</code>
+          </p>
+
+          <p class="process_step_instruction">2. Add created file to Staging</p>
+          <p>
+            Now the the step to generate list of locally created or modified
+            files and add into the staging layer. To do so run the below
+            command. Every time that make a changes locally inside the directory
+            it need to be perform.
+          </p>
+
+          <p class="process_step_command">
+            <em>#Add only specific file</em>
+            <code>git add index.html</code>
+          </p>
+          <p class="process_step_command">
+            <em>Add all the modified files at once</em>
+            <code>git add .</code>
+          </p>
+
+          <p class="process_step_instruction">
+            3. Move added list to local Git repo
+          </p>
+          <p>
+            This process call <code>committing</code>. With above command
+            projected list of files need to move to a local repo. By running the
+            following command, it move a snap shot of those files into local
+            repository. The text inside the quote should have to change with
+            what changes done.
+          </p>
+          <p class="process_step_command">
+            <code>git commit -m "Initial commit"</code>
+          </p>
+
+          <p class="process_step_instruction">
+            4. Move committed file to GitHub remote repository
+          </p>
+
+          <p>
+            The last step to send the committed files to the remote repository
+            which is already link by
+            <code>git remote add origin &lt;replace_with_URL&gt;</code>. Send
+            the extract copy of the local files to the Github project run the
+            below command.
+          </p>
+          <p class="process_step_command">
+            <em>#If the default branch name is main</em>
+            <code>git push -u origin main</code>
+          </p>
+          <p class="process_step_command">
+            <em>#If the default branch name is master</em>
+            <code>git push -u origin master</code>
+          </p>
+          <p>It can be found as shown in the below screenshot.</p>
+          <img
+            alt="The GitHub default branch"
+            src="./images/project/defaultBranch.png"
+            width="400px"
+            height="auto"
+            class="project_article_img"
+          />
+          <p>
+            🎉🎉 Great Job ...! Now you have link and send the files to the
+            GitHub repo.
+          </p>
+          <p>
+            To keep both local project directory and the remote GitHub project
+            on a same keep continue pushing the update regularly.
+          </p>
+          <p class="process_step_command">
+            <em><code>git add .</code></em>
+            <em
+              ><code
+                >git commit -m "&lt;replace_with_appropriate_comment&gt;"</code
+              ></em
+            >
+            <em><code>git push</code></em>
           </p>
         </article>
 
         <article class="project_article">
           <h2>How other people can contribute to the project</h2>
-
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos et
-            expedita non enim neque unde esse quo quas provident, libero omnis
-            autem velit accusamus in hic facere voluptas ipsa molestias. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Sunt in, cum ex
-            delectus vero, nostrum, cupiditate natus facere necessitatibus fugit
-            optio neque et? Facilis fuga rem voluptates labore sint quibusdam?
+            After created remote repository it opens several ways to collaborate
+            with other.
+          </p>
+          <div class="project_article_list">
+            <ul>
+              <li>
+                <p>
+                  <span class="list_item">Add collaborators: </span> It is
+                  possible to add collaborators, collaborators can do the same
+                  GitHub operations such as Clone, Merge, Pull, Push and give
+                  Code Review when the project is public.
+                </p>
+              </li>
+            </ul>
+            <p>
+              To give access to the collaborators, it has to invite team members
+              under the <code>Settings &#8594; Collaborators </code>.By running
+              the below command collaborators can clone the repository and work
+              as a owner. They can now clone, edit, and contribute through pull
+              requests.
+            </p>
+            <p class="process_step_command">
+              <em>#If the default branch name is main</em>
+              <code>git clone &lt;replace_with_URL&gt;</code>
+            </p>
+
+            <ul>
+              <li>
+                <p>
+                  <span class="list_item">Fork repositories: </span> When the
+                  GitHub project is public and those who are not collaborators
+                  can get a copy of the same project by doing fork. It is
+                  extract same copy of the project but no direct connection to
+                  the original remote repo. Once perform <code>fork</code> it is
+                  possible to do changes in forked repo and add those changes to
+                  the original repo by making <code>pull request</code>. To
+                  merge with the original project initial owner has to accept it
+                  after reviewing. Indeed, onces forked it is possible to
+                  <code>clone</code> the forked upstream project to local.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <p>
+            <a
+              href="https://docs.github.com/en"
+              target="https://docs.github.com/en"
+            >
+              Find more details on GitHub Doc</a
+            >
           </p>
         </article>
       </section>

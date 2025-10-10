@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Changes</title>
   <link rel="stylesheet" href="styles/styles.css" />
   <link rel="stylesheet" href="styles/changes.css">
 </head>
@@ -14,30 +14,75 @@
     <nav class="menu">
       <a class="menu-item" href="index.html">Homepage</a>
       <a class="menu-item" href="project.html">Project</a>
-      <a class="menu-item" href="branching.html">Branching</a>
       <a class="menu-item active" href="changes.html">Changes</a>
+      <a class="menu-item" href="branching.html">Branching</a>
       <a class="menu-item" href="aboutus.html">About us</a>
     </nav>
   </header>
 
-  <main class="main">
-    <article class="main_article">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos et expedita non enim neque unde esse quo quas
-        provident, libero omnis autem velit accusamus in hic facere voluptas ipsa molestias. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Sunt in, cum ex delectus vero, nostrum, cupiditate natus facere necessitatibus
-        fugit optio neque et? Facilis fuga rem voluptates labore sint quibusdam?</p>
-    </article>
-    <article class="main_article">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos et expedita non enim neque unde esse quo quas
-        provident, libero omnis autem velit accusamus in hic facere voluptas ipsa molestias. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Sunt in, cum ex delectus vero, nostrum, cupiditate natus facere necessitatibus
-        fugit optio neque et? Facilis fuga rem voluptates labore sint quibusdam?</p>
-    </article>
-    <article class="main_article">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos et expedita non enim neque unde esse quo quas
-        provident, libero omnis autem velit accusamus in hic facere voluptas ipsa molestias. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Sunt in, cum ex delectus vero, nostrum, cupiditate natus facere necessitatibus
-        fugit optio neque et? Facilis fuga rem voluptates labore sint quibusdam?</p>
+  <main class="main_changes">
+    <article class="changes_article">
+      <article class="changes_introduction">
+        <h1 class="changes_title">Making and Saving Changes in Git</h1>
+        <p class="page_description">Once your repository is created, the real work begins; writing code, editing files,
+          and improving your project. Git helps you keep track of every change you make and makes it easy to share your
+          updates with your. This page walks you through the process of updating an existing Git repository. You'll see
+          how to:</p>
+        <ul>
+          <li>Stage your modified files</li>
+          <li>Commit those changes with clear messages</li>
+          <li>Push them to your remote repository on GitHub</li>
+        </ul>
+        <img src="./images/git-flowchart-changes.png" alt="Changes flow chart" height="auto" width="100%">
+      </article>
+      <article class="workflow_article">
+        <h2>Understanding The Git Work Flow</h2>
+        <p>Before sending your code to GitHub, there are three main steps to follow:</p>
+        <div class="commands">
+          <h3>1.Staging</h3>
+          <p>Think of staging like putting files in a “ready-to-send” box. When you make changes in your project, Git
+            doesn't automatically include them. You first need to stage the files you want to save.</p>
+          <p class="command_description"># For staging a specific file</p>
+          <p class="command_syntax">git add filename.html</p>
+          <p class="command_description"># For staging all changed files</p>
+          <p class="command_syntax">git add .</p>
+          <p>💡 Tip: The dot (.) means “add everything I've changed.”</p>
+        </div>
+        <div class="commands">
+          <h3>2.Committing</h3>
+          <p>Committing means saving a version of your project at a specific point in time. When you commit, Git stores
+            a record of your staged changes; what was added, removed, or edited, along with a message describing what
+            you did. You can think of it like pressing “Save” on a checkpoint in a video game: if something breaks
+            later, you can return to that saved point.</p>
+          <p class="command_description"># For committing the staged files</p>
+          <p class="command_syntax">git commit -m "add your message here"</p>
+          <p>💡 Tip: The message should describe why or what you changed, not just “update.”</p>
+        </div>
+        <div class="commands">
+          <h3>3.Pushing</h3>
+          <p>Pushing is like sending your snapshot to the cloud (GitHub). When you push, you upload your local commits
+            to the remote repository so your teammates can see and use them.</p>
+          <p class="command_description"># If it's your first time pushing this branch, you might need to link it</p>
+          <p class="command_syntax">git push -u origin your_branch_name</p>
+          <p class="command_description"># For pushing after you linked</p>
+          <p class="command_syntax">git push</p>
+        </div>
+      </article>
+      <article class="best_practices_container">
+        <h3>Best Practices for Using Git:</h3>
+        <ul class="list">
+          <li><span class="span">Commit often and clearly:</span> Make small, frequent commits with descriptive messages
+            (e.g., "Add footer links" instead of "Update").</li>
+          <li><span class="span">Pull before you push:</span> Always run git pull to get the latest updates
+            before pushing your own work.</li>
+          <li><span class="span">Check before committing:</span> Use git status to review what's being committed, avoid
+            adding unnecessary files.</li>
+          <li><span class="span">Push regularly:</span> Don't wait too long to push changes, so your team always
+            works with the latest version.</li>
+          <li><span class="span">Keep branches clean:</span> Delete old or merged branches to keep the project
+            tidy.</li>
+        </ul>
+      </article>
     </article>
   </main>
   <footer class="footer">
